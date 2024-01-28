@@ -1,0 +1,53 @@
+{
+    "name": "flexiwind/flexiwind",
+    "description": "Laravel and Livewire package helpers to use tailwind css and apline js",
+    "type": "library",
+    "license": "MIT",
+    "keywords": [
+        "laravel",
+        "livewire",
+        "blade",
+        "ui",
+        "components",
+        "livewire-packages",
+        "livewire-components",
+        "alpinejs"
+    ],
+    "authors": [
+        {
+            "name": "Tresor kasenda",
+            "email": "tresorkasendat@gmail.com",
+            "homepage": "https://github.com/Tresor-Kasenda"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Flexiwind\\Flexiwind\\": "src/"
+        }
+    },
+    "require": {
+        "illuminate/support": "^10.40"
+    },
+    "require-dev": {
+        "laravel/pint": "^1.13",
+        "orchestra/testbench": "^8.20",
+        "pestphp/pest": "^2.31"
+    },
+    "config": {
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        },
+        "sort-packages": true,
+        "preferred-install": "dist",
+        "optimize-autoloader": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Flexiwind\\Flexiwind\\FlexiwindServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
